@@ -1,4 +1,4 @@
-module watermark-go
+module go-watermark
 
 go 1.26
 
