@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"watermark-go/watermark"
+	"github.com/IosifSuzuki/go-watermark/watermark"
 )
 
 func main() {

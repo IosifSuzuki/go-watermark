@@ -1,4 +1,4 @@
-module go-watermark
+module github.com/IosifSuzuki/go-watermark
 
 go 1.26
 
