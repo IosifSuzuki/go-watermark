@@ -35,7 +35,7 @@ func LoadImage(path string) (image.Image, error) {
 }
 
 func SaveImage(path string, img image.Image, quality int) error {
-	format, err := formatFromPath(path)
+	format, err := FormatFromPath(path)
 	if err != nil {
 		return err
 	}
@@ -64,7 +64,7 @@ func Encode(w io.Writer, img image.Image, format Format, quality int) error {
 	}
 }
 
-func formatFromPath(path string) (Format, error) {
+func FormatFromPath(path string) (Format, error) {
 	switch strings.ToLower(filepath.Ext(path)) {
 	case ".jpg", ".jpeg":
 		return JPEG, nil
